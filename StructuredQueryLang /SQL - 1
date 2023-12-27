@@ -1,0 +1,82 @@
+Structured Query Langauge Overview 
+
+SQL is a data base that is seen as the collection of data that could be easily ascessed .
+A software that is used ot manage the DB is called as the data base managemetn system .
+The user cannot use the Data base directy but uses the dbms that in turn ascess the data in the db .  
+
+Type of the data base  :
+1. Realtional data base .->Mysql , oracale , ms ascess 
+2. Non relational data base  .->Mongo DB
+
+SQL is a realtional data base .
+In the relational data base the data is stored in the from of the tables and each table is used to store the data  .
+In the non relational data base the data is not stored in the from of the tables. 
+
+What is SQL ?
+> SQL is a programming language that is used to interact with the realtional databases . 
+
+It is used to perfrom the crud operations :
+1.Create 
+2.Read
+2.Update
+4.Delete
+
+
+Structure of a database :Typically a SQL 
+The structure of a database has table with each table having data in it . Now each table and each data has the interconnected data in them .
+Example : table 1 has the student name  , table2 has the fee , table3 has the rollnumber and the course name .
+
+
+What is a table in a data base ? 
+The data base in a dbms has section or columns where the data is segerated with different context but same realted type. 
+
+Vertical section  -> column 
+hoziontal section -> row 
+
+Column show the general structure (the type of the infromation) , like the column has row with the name  , roll number , fees and the marks . This is called as the SQL Schema . Typically the schema for the sql means the desgn of the data base .
+
+Row typically has the data for the indvisual person or the indivisual context . Like the data of person who has roll number y and fees Z  .
+
+
+
+
+Creating a First database :
+Code entitled :
+
+
+CREATE DATABASE db_name  ;
+USE db_name ;
+CREATE TABLE name_table(column_1  , column_2 , column_3) ;
+DROP DATABASE db_name ; 
+
+
+CREATE : This is used to create the data base  and the name will be shown in the schema . 
+
+DROP COMMAND -> this is used to delete the data base and once the data based is drop the database will not be shown in the schema . 
+
+USE COMMAND : This is the command that tells the sql that we are going to do the operation for now on the db_name data base only and other are left aside for now .
+
+CREATE TBALE name_table : Use to create the table .
+
+Defining schema for the sql table  :
+
+Example :
+
+CREATE TABLE student (
+id INT PRIMARY KEY ,
+name VARCHAR(50) ,
+age INT NOT NULL
+) ;
+
+
+***IMPORTANT POINTS TO RELATE***
+SQL IS NOT A CASE SENSETIVE LANGAUGE .
+GREEN SIGN IN THE SIGNAL ACTION MEAN THE CODE IS RUNNING SUCESSFULLY .
+TO VIEW OUR DATABASE WE HAVE TO USE THE SCHEMA TAB AND THEN REFRESH THE SCHEMA . 
+ALL THE USE CREATED DATA BASE IS SHOWN THERE .
+
+"SYS" IS A PRE-CREATED DATA BASE AND NO CHANGE HAS TO BE MADE IN THAT. 
+
+CLICK ON THE HIGHLIGHTED PART , BY FIRST HIGHLITING THE COMMAND , THAT WILL RUN ONLY THAT COMMAND  .
+
+*** IMPORTANT ***
