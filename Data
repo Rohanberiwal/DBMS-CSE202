@@ -1,0 +1,53 @@
+Data base management system (DBMS)
+
+What is data ?
+
+The way the computer stores the infromationm of the data in the from  of the bit . This raw collection of the bits is the data .
+Any type of the description stored in the memoery of the computer is called as the data . The example to these is the image , text file to eveything in the computer . 
+
+Data in the memory ->
+The data in the memeory in as the data types either as the float , integer or anything . 
+
+Every data has meaning . 
+Incoming data -> processed -> information .
+
+Unprocessed data has no meaning and cannot be stored or cannot be considered as the infromation.
+
+Data -> processed -> converted in information with meaning .
+
+Official Defination for Infromation :
+Information -> processed data is called as the information . The data that is processed, structured and organsied is called as the data or the information . 
+
+> Information provides the context of the data and help in the making of the decision to the  specfic Questions . 
+
+
+Type of the data :
+1. Quantative data 
+	>Numerical form of the data 
+	> This has huge quantity 
+2. Qualitaive data 
+	> quality based data 
+	> descriptive and has the context like the name ,age , sex 
+
+**Improtant**
+
+Processing is the only operation that bifercates the data and the infromation . 
+
+** **
+
+DataBase -> this is a electronic place where the data can be stored , easily ascessed and managed and imrpoved or changes could be made .
+
+The real use of the data is done using the data base management system .
+
+Operation that as DBMS support :
+1. There is additon  , removal . storing of the data avaiable in the dbms .
+The data in the dbms is ascessed using the code which has to be written in some of the dbms softwares like sql . 
+
+
+The word DBMS has two letters : DB + MS 
+Where DB is the place where the data can be store .
+The MS is basically the part where the operation on the data is done  
+	>delete 
+	> update 
+	> add
+	> ascess
