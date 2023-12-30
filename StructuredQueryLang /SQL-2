@@ -1,0 +1,105 @@
+Structred Query Language -2 
+Creating tables in the SQL 
+
+What is a SQL Query ?
+The table along with the column and the row are called as the sql query  .
+The exampel to a sql query is :
+
+Example 
+
+CREATE DATABASE db_name ;
+USE db_name  ;
+CREATE TABLE student(id INT PRIMARY KEY , name VARCHAR(50) , age INT NOT NULL) ; // this is the query part  
+DROP DATABASE db_name  ; 
+
+Insertion of the data into a SQL Query : 
+For the insertion of the data into the sql table as a query use the INSERT Into function. An example to this is :
+
+CREATE DATABASE db_name ;
+USE db_name ;
+CREATE TABLE db_table(id PRIMARY KEY , name VARCHAR(100) , age INT NOT NULL ) ;
+INSERT INTO db_table(1,"rohan",  19);
+INSERT INTO db_table(1,"rohan",  19);
+INSERT INTO db_table(1,"rohan",  19);
+INSERT INTO db_table(1,"rohan",  19);
+DROP DATABASE db_name  ;
+
+
+What is the issue while using the primary key ?
+The primary key in the table measn that the primary key or the section of that table has to be differenrt for different part and it cannot be same otherwise a sql error would be generated .
+
+
+How to print a whole table as a output in the sql window ?
+For the printing of the whole table in the output use :
+SELECT * FROM Table_name  .
+
+
+Example to the above :
+//CODE 
+CREATE DATABASE db_name  ;
+USE db_name  ;
+CREATE TABLE STUDENT(id PRIMARY KEY ,  name VARCHAR(100)) ;
+INSERT INTO STUDENT(1,"ROHAN") ;
+SELECT * FROM STUDENT ;
+DROP DATABASE db_name ; 
+
+//CODE 
+
+DATA-TYPE IN SQL :
+There are several data type in the sql langauge  :
+However some of the data type are used and needed for the sql  :
+1.CHAR(50) -> String(0-255) , can store the fixed length of the var .
+2. VARCHAR(lenght parameter ) ->string(0-255) can store the character concatented upto a given length .
+
+3.BLOB -> string (0-65535) this can stroe the binary object that are very very large .
+Example to this is : BLOB(1000) ;
+
+4.INT : integer variable . use to store 64-128 bit integer  .
+
+5.TINYINT : use to store small integer values like from 8 bit integer .
+6.BIGINT : larger value bit integer from 1  to 64  .
+7.FLOAT : decimal number 
+8.DOUBLE : use to store the data type that has high precision like 23-54 number  in the decimal or overall . 
+
+9.BOOLEAN : true / false .
+10.DATE : use to store the data datatype like MM-DD-YYYY .
+11.BIT : Use to define that number of the bits that can be used and not every bit values . Like BIT(2) means 2 bit values can be only stored and not 3,4, or x bit could be used  . 2^ x is the number of memory bits that could be used where x is the input bits that has been passed  .
+
+
+What is the differnt in the CHAR(50) AND VARCHAR(50) ?
+The main differnce is in the memory allocation of the two :
+CHAR allocates 50 byte of the space in the memoery and that 50 is reserved for the Char only and cannot ber used by any other thing  .
+While the varchar uses the best fit algoirhtm and fits the best memory in the space. It takes the fixed length that has to be used and not more than that . 
+
+SOME OF THE IMPORTANT POINT  :
+The boolean cannot be used directly in the sql , the tinyint has to be used to implement the boolean in the int .
+
+SIGNED AND UNSIGNED DATA TYPE IN THE SQL  :
+signed : that has both the negative and the positve integer  .
+Example  : TINYINT UNSIGNED (0-255) .
+
+Changing the range of the tinyint in the sql :
+To change the range in the tinyint we can use the usnsigned word in the name ,  that name means that the unsigned type or the postive integer can only be used in the whole table input .
+
+TINYINT (rnages from -127 to 128)
+TINYINT UNSIGNED  (ranges from 0-255 ) // reason : unsigned number cannit has the negative number in themselves . 
+
+SQL COMMANDS  :
+The sql commands can be bifercated into 5 types in total :
+1.DDL COMMAND : Data defination Langauge . 
+> The use of this to rename , change  , alter , truncate and drop  . 
+> Main ascpect of this SQL command is to make the changes in the schema . 
+> The data tbale in the sql uses this command .
+> The command that is used here is the RENAME , DROP  , TRUNCATE , ALTER etc. 
+
+
+2. DQL (DATA - Query language ) :
+This has the command like the "SELECT". 
+> this has mainly the viewing command or the command where the akteration , or the upgratation operation are not used .
+
+3.DML(DATA - mainpulation language) :
+> this include the commands like the insert , update or the delete  .
+> This is used to carry out the chnages in the exisiting data that is already in the table . 
+
+4.DCL(DATA - CONTROL LANGUAGE) 
+> This is used to grant permission to the usrs in the table .
