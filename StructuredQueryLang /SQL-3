@@ -1,0 +1,61 @@
+Structured Query Language - 3 
+
+Contraints 
+In the sql tables there has to be contriant defind in the constructor of the table in the table_name specifically  .
+
+What are the possible constriant in the SQL tables  ?
+1.NOT NULL -> column cannot be null value ->COL_1 NOT NULL. 
+2. UNQIUE -> All the value in the column are different -> COL_2 INT UNIQUE .
+3.PRIMARY KEY  :make the column unique and not null but use for only one .
+ 
+The main difference in the primary key and the Unique value is :
+when we run the sql query with the two same unique id then the output of the same will be a error  .
+
+while we enter the two primary key same  in the table then the column could ber only and only one . The two key unique key can be defined using the UNIQUE keyword only . 
+
+How to define the combination primary key  ?
+To defiend a tuple of the primary key in the table we can use this :
+
+CREATE TABLE TABLE_1(id INT , name VARCHAR(50)  , PRIMARY KEY (id, name));
+in the above the tuple of the tow primary key cannot be same for exaample : 
+(1,rohan) = (2,rohan) // this will work 
+(1,rohan) = (1,raghu_mahajan) //this will also work 
+(1,rohan) - (1,rohan) // this will give a error . 
+
+How to explicaity define a forgien key  ?
+The foreign key in the sql is defined using the foreign key keyword . An example to this is  :
+
+CREATE TABLE TABLE_NAME( id INT , FOREIGN KEY (id) refrances table_name2) ;
+
+How to set the defualt same value for every column ?
+This can be done using the follwoing :
+//code 
+CREATE TABLE TABLE_NAME( salary INT DEFAULT 25000) ;
+Using this wont necesary create the default salary but if the user never entry any salary then the default salary is used .
+
+For exmaple to the above is :
+CREATE DATABASE db_name ;
+USE db_name   ;
+CREATE TABLE table(id  INT UNIQUE  ,  name VARCHAR(50), sal INT DEFAULT 1000) ;
+INSERT INTO table(id , name) VALUE (1,"rohan") ;
+SELECT * FROM table ; 
+SHOW TABLE ; 
+DROP DATABASE IF EXIST db_name ; 
+
+The output of the above is (1,rohan , 1000) ; as the ouput . 
+
+How to limit the value in the SQL  ?
+To limit the constraint in the SQL use the CHECK constriant keyword to limit the keyword  .This is simialr to the conditionals .
+
+
+Example to this is : 
+CREATE DATABASE IF NOT EXIST db_name ; 
+USE db_name  ;
+CREATE TABLE city(id INT PRIMARY KEY  , city VARCHAR(50) , age INT NOT NULL , CONSTRAINT age_check CHECK (age >=18 and city =DELHI ) ;
+ 
+CREATE TABLE new_table(age INT CHECK (age >=18) );
+DROP DATABASE IF EXIST db_name   ;
+
+SYNATX FOR THE CONSTRIANT :
+CONSTAINT name_of_constraint CHECK (_conditions) ;
+This has to be writtne in the create tbale constructor .
