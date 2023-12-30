@@ -103,3 +103,82 @@ This has the command like the "SELECT".
 
 4.DCL(DATA - CONTROL LANGUAGE) 
 > This is used to grant permission to the usrs in the table .
+> this  has the grant and revoke permission .
+
+5.TCL (Transction controls language) :
+> This is used in the advanced dbms and has commands like : start , transction , control  , rollback .
+
+
+The starting three is most usedfull .
+
+DataBase Queries
+Some of the useful database queries are given below  :
+
+CREATE DATABASE db_name can be rewritten in more infromation like 
+CREATE DATABASE IF NOT EXIST db_name 
+
+DROP DATABASE db_name ;
+DROP DATABASE IF EXIST db_name ;
+
+SHOW DATABASE  ;
+SHOW TABLES ;
+
+if - if not conditinal in the sql :
+The above is aslo the example of this .
+Running the code under warning is fine but error is not beraable .
+
+
+SHOW DATABASE -> USE to show all the database in the sever  .
+SHOW TABLE : use to show all the tables in the database that are curreclty active in the server .
+
+
+Table realted queries :
+How to create a table in the sql ? 
+The most useful and the efficient way is  :
+CREATE TABLE TABLENAME (PARAMETER THAT HAS TO BE ADDED IN THE TABLE ) ;
+
+INSIDE THE CONTRUCTOR OF THE TABLENAME(column_name_1 datatype contriant , column_name_2 datatype contraint)  and so on , 
+
+CREATE : This is used to define the schema of the table .
+
+What are the features of the PRIMARY KEY? 
+There are in total 2 features of the primary key :
+1. The primary key is not null .
+2. The primary key is always unique for different enteris.
+
+
+Just like DROP DATABASE COMMAND there is also a DROP TABLE command that is used ot drop the ctable in the sql   .
+
+selecting the data from the data base  :
+The SYNTAX IS : 
+SELECT NAME_OF_QUERY FROM TABLE_NAME ;
+for getting everyhting in the table we have to use the * that prints or selects all the content in the table .  
+
+Insertion of multiple values into the data type : 
+The multiple value in the tabel can be inserted using the syntax given below  :
+INSERT INTO STUDENT (ROLL_NAME ,  NAME)  VALUE(1,ROHAN) , (2,STUTI) ,(3,RAGHU_MAHAJAN).
+
+Solution to QUESTION1 :
+CREATE DATABASE IF NOT EXIST db_name  ;
+USE db_name ; 
+CREATE TABLE employee( name VARCHAR(100) ,  SALARY INT NOT NULL) ;
+INSERT INTO employee (name ,  SALARY)  VALUE ("adam",25000) ,("bob: ,30000) ;
+SELECT * FROM employee 
+SHOW TABLE 
+DROP DATABASE IF EXIST db_name ;
+
+Introduction to keys in the SQL :
+Special column in the table of the dbms is called as the keys .
+1.PRIMARY KEY 
+>As the name suggest this key is very main role in the dbms table . 
+>It is a column in a table that uniquely identifies each row .  There is only one Primary key and it cannot be null. 
+>This has to unique and cannot be same for two enteries of the table . 
+
+2.Foreign key  :
+>The column that refer to the primary key is called as the Forgein key .
+There are multiple foreign key  . They have duplicate and null values .
+
+In short : if a key is primary key in a table and in the other table the same key is prersent , then that key is the forgein key in that latter table since it was primary key in the former table .
+
+Forgein key is basivally the primary key that is primary in the earlier table .
+Forgein key can be null as well .
