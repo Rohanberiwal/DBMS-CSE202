@@ -20,9 +20,9 @@ CREATE TABLE TABLE_1(id INT , name VARCHAR(50)  , PRIMARY KEY (id, name));
 in the above the tuple of the tow primary key cannot be same for exaample : 
 (1,rohan) = (2,rohan) // this will work 
 (1,rohan) = (1,raghu_mahajan) //this will also work 
-(1,rohan) - (1,rohan) // this will give a error . 
+(1,rohan) = (1,rohan) // this will give a error . 
 
-How to explicaity define a forgien key  ?
+How to explicity define a forgien key  ?
 The foreign key in the sql is defined using the foreign key keyword . An example to this is  :
 
 CREATE TABLE TABLE_NAME( id INT , FOREIGN KEY (id) refrances table_name2) ;
@@ -59,3 +59,194 @@ DROP DATABASE IF EXIST db_name   ;
 SYNATX FOR THE CONSTRIANT :
 CONSTAINT name_of_constraint CHECK (_conditions) ;
 This has to be writtne in the create tbale constructor .
+
+WHERE clasue in SQL :
+To define some condition we can use the WHERE Clause in the SQL . 
+Synatx  :
+SELECT col_1 , col_2 FROM table_name  ;
+WHERE condition  ;
+
+Example to the above is :
+
+CREATE DATABASE db_name  ;
+USE db_name ;
+CREATE TABLE tb_name(col_1  , co_2) ;
+
+SELECT col_2 FROM tb_name WHERE city =  "DELHI" ;
+DROP DATABASE db_name ;
+
+
+Multiple condition in the WHERE conditon clasue  :
+Example to this is  :
+
+CREATE DATABASE IF NOT EXIST db_name ; 
+USE db_name  ;
+CREATE TABLE tb_name(col_l , col_2) ;
+INSERT INTO tb_name(col_1,col_2) VALUE (1,2) ;
+SELECT col_2 FROM tb_name WHERE col_2 = 2 AND col_1 = 1 ;
+DROP DATABASE IF EXIST db_name ;
+
+The multiple condiotn could be clubbed using the AND OPERATOR  . 
+
+Operator in the Clause  :
+1. Arthematic operator :  add , sub , mul , div .
+2. Comparison operator  : greater than , less than , equal . 
+3. Logical operator  : AND , OR , NOT , BETWEEN , ALL  , LIKE , ANY  .
+4. Modulo operator  : & , | basically bitwise and and bitwise or operator .
+
+The "AND" and "OR" operator is same to that of the other programming languages .
+
+
+Range operator  :
+BETWEEN is a range operator that is used to find some value in the between of two thing . 
+An example to this is :
+
+Code  :
+CREATE DATABASE IF NOT EXIST DB_NAME ; 
+USE DB_NAME ;
+CREATE TABLE TB_NAME  ;
+INSERT INTO TB_NAME // SOME OPERATION ; 
+SELECT * FROM TB_NAME IF MARKS BETWEEN 80 AND 90  ;
+DROP DATABASE IF EXIST DB_NAME ; 
+
+In the above code the between operator is used to find the marks between the two operation , both the marks in the above (80 and 90 ) are inclusive or operation and both are included  .
+
+BETWEEEN USES THE INCLUSIVE OPERATIONS  .
+
+2.IN operator : In this a tuple or a list is passed and this is used to show the detials of the input query that has those paramter in the list / tuple .
+An example to this is  :
+
+CREATE DATABASE IF NOT EXIST db_name ; 
+USE db_name ; 
+CREATE TABLE TB_NAME ;
+INSERT INTO  // SOME OPERATION   ;
+SELECT * FROM  TB_NAME  WHERE city IN ("DELHI"  , "MUMBAI") ;
+DROP DATABASE IF EXIST db_name  ;
+
+How does the IN operator works ? 
+In the above example if there is a input wiht the city as delhi or the city as mumbai then the input for that table would be printed on the output .
+
+>If the list item are not in the inout then a empty database is printed as the output  .
+
+NOT operator is used to find the negate of  the given condition  :
+and exampple to this is > 
+CREATE DATABASE IF NOT EXIST db_name ;
+USE db_name ; 
+CREATE TABLE TB_NAME  ;
+INSERT INTO // SOME INPUT QUERY ;
+SELECT * FROM TB_NAME WHERE city NOT IN ("delhi"  , "Mumbai" ) ;
+DROP DATABASE IF EXIST db_name  ;
+
+Limit clause in the SQL  :
+This is used to define a limit on the database . This puts a upper limit on the number of (tuple) row to be returned . An example to this is : 
+
+SELECT * FROM student_table LIMIT 3 ; 
+
+official SYntax for this :
+SELECT col_2 , col_1 FROM tb_name 
+LIMIT numric number  ;
+
+Limit with conditons  :
+An exmaple to the above is  :
+CREATE DATABASE IF NOT EXIST db_name ;
+USE db_name  ;
+CREATE TABLE tb_name () ;
+INSERT INTO // SOME INPUT ;
+SELECT * FROM tb_name WHERE city = "Mumbai" LIMIT 2 ; 
+DROP DATABASE IF EXSIT db_name  ;
+
+The above code finds out the top two people in mumbai that has city name registered as mumbai . 
+
+
+Order By Clause :
+This is used to sort the data in either ascending or in the desceding order  .
+
+An exmaple to this is :
+CREATE DATABASE db_name  ;
+USE db_name ;
+CREATE TABLE TB_NAME ;
+SELECT * FROM TB_NAME ORDER BY CITY ASC ; 
+DROP db_name  ;
+
+The above code prints the city in the asceding order .In the above the order is deifned by the ascii value of the letters. 
+
+ORDER BY is the conditon that is used to sort the data and the codntion for the sorting is given or has to be mentioend at the end  .
+
+An example to this is :
+// asceseding order marks . 
+CREATE DATABASE IF NOT EXIST db_name ;
+USE db_name ;
+CREATE TBALE tb_name() ;
+INSERT INTO tb_name  ;
+SELECT * FROM tb_name ORDER BY marks ASC  ;
+DROP DATABASE IF EXSIT db_name ;
+
+
+//descesing order marks 
+CREATE DATABASE IF NOT EXIST db_name ;
+USE db_name ;
+CREATE TBALE tb_name() ;
+INSERT INTO tb_name  ;
+SELECT * FROM tb_name ORDER BY marks DESC  ;
+DROP DATABASE IF EXSIT db_name ;
+
+//CODE 
+Code to select the top three people :
+CREATE DATABASE IF NOT EXIST db_name ;
+USE db_name ;
+CREATE TBALE tb_name() ;
+INSERT INTO tb_name  ;
+SELECT * FROM tb_name ORDER BY marks DESC LIMIT 3   ;
+DROP DATABASE IF EXSIT db_name ;
+
+
+Aggregate Function in SQL  :
+Aggregate function  perfrom  a calcaution on the set of value . and return a single value  .
+These are sort of the built - in function that some of the other language support . 
+AN exmaple of the above are  :
+1.COUNT() 
+2.MAX()
+3.MIN()
+4.SUM()
+5.AVG()
+
+These are use to do the basic mathematical function in less time and code .
+Some of the example  :
+
+Code to get the max marks :
+SELECT max(marks) FROM students  ;
+
+Code to get averge of the marks  :
+SELECT Avg(marks) FROM students ; 
+
+The aggregate function has to be used in the co,bination with some thing LIke in the above exmaple using the select statement the aggreagate function is used .
+
+In the above the aggregate function only  a single value is returned .
+
+Group By clause  :
+Group row that have the same value  into the summary rows . 
+It collects data from Multiple records and groups the result by one or more columns .
+
+Generally we use group by clause by some aggregation functions. 
+Example to group by clause :
+
+What does the below function do  ?
+
+SELECT city , COUNT(NAME) 
+FROM STUDENTS 
+GROUP BY CITY  ;
+
+The above function group the number of studetn in each city , it will calucate the total number of student in each city .
+
+The above group by function is only used to group the paramters and then print the output using the particular compution .  
+
+
+How to get the total number of the student based on the roll_no  ?
+CODE : 
+
+CREATE DATABASE IF NOT EXIST db_name ; 
+USE db_name ;
+CREATE TABLE TB_NAME  ;
+INSERT INTO ; 
+SELECT * FROM 
+DROP DATABASE IF EXIST db_name ;
