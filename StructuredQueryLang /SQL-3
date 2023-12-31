@@ -248,5 +248,29 @@ CREATE DATABASE IF NOT EXIST db_name ;
 USE db_name ;
 CREATE TABLE TB_NAME  ;
 INSERT INTO ; 
-SELECT * FROM 
+SELECT CITY , count(roll_number) , FROM STUDENT GROUP BY CITY ;
 DROP DATABASE IF EXIST db_name ;
+
+In the group by the unique thing also may become un-unqiue . 
+
+How to get the state wise avergae of the marks ?
+
+// Code given below ; 
+CREATE DATABASE IF NOT EXIST db_name ;
+USE db_name  ;
+CREATE TABLE TB_NAME ;
+INSERT INTO TB/_NAME ; 
+SELECT CITY avg(marks), FROM TB_NAME  GROUP BY  city  ;
+DROP DATABASE IF EXIST db_name  ;
+
+
+Question 1. TO find the avegrae marks of each city In india in the ascesing order  .
+
+Code :
+
+CREATE DATABASE IF NOT EXIST db_name  ;
+USE db_name ;
+CREATE TABLE tb_name()  ;
+INSERT INTO tb_name() VALUE () ;
+SELECT city  , avg(marks)  , FROM tb_name GROUP BY city ORDER BY avg(marks) ASC  ;
+DROP DATABASE IF EXIST db_name ; 
