@@ -1,0 +1,102 @@
+Structured Query Langauge - 4 
+
+Having Clause  
+Similar to Where i.e applies some condition on  rows . Used when we want to apply any condition after grouping  .
+This is very very simialr to the Having clause .  
+
+Count number of student in each city where the marks cross 90  .
+
+Example 
+
+SELECT 	count(name) , city 
+FROM STUDENT GROUP BY CITY HAVING max(marks) > 90 ;
+
+Difference between having clause and where clause ? 
+The main difference is that the having clause is use to create conditoomn on  the group whereas the where si used to put a conditoon on the wehre claus .
+
+When there is a conditon on the group fonred by GROUP BY function on that only the HAVING CLAUSE IS used . 
+
+General Sequnce and order of clasues  :
+1. SELECT 
+2. FROM 
+3. WHERE 
+4. GROUP BY 
+5. HAVING 
+6. ORDER BY
+7. DESC / ASC 
+
+Syntax  :
+SELECT column_1 FROM table_name WHERE condition GROUP BY column_name  HAVING conditon ORDER BY column_name ASC  .
+
+Having-> Group by function 
+Where -> row condition .
+
+An example for the abive combination  :
+CREATE DATABASE db_name ;
+USE db_name  ;
+CREATE TABLE tb_name() ;
+INSERT INTO tb_name  ;
+SELECT city , MAX(marks) FROM tb_name WHERE grade  = "A" GROUP BY city HAVING max(Marks) >90 ORDER BY city ;
+DROP DATABASE  db_name  ;
+
+The output for the above is the marks with grade "A" and the output is the name of the city . 
+
+Combine operation  in  Tables Where there are several inputs :
+Command_1  : Update command :
+This is used to update several place with anathor input  . An example to this is  :
+
+UPDATE tb_name 
+SET col_1 = var_1 , col_2 = var_2 
+WHERE condition  ;
+
+
+Ex-> UPDATE student SET grade = "0" WHERE grade  = "A" ;
+In the above all the grade 0 is set to grade 0 where grade was A . 
+
+Save mode in the SQL for problem updation   :
+The save mode is a pre default mode that gives warning while giving the save command , hence to turn off the save mode in the sql we can use the command : 
+SET SQL-SAFE -UPDATES  = 0 ;
+This command turn off the save mode and the user can do the updation very very easily . 
+
+The above command is a sql query command .
+For the specific input if we are supposed to make the changes then : An example to this is   :
+
+CREATE DATABASE db_name ; 
+USE db_name ;
+SQL - SAFE -UPDATES =  0 ;
+CREATE TABLE tb_name ;
+INSERT INTO tb_name ; 
+UPDATE tb_name SET mark  = 92 WHERE name  = "emanuel" ;
+SELECT marks , city  , name FROM tb_name WHERE name  =  "emanuel" ;
+DROP DATABASE db_name ; 
+
+The updated marks will be shown now . 
+
+The UPDATE tb_name SET input_col_name WHERE condtion name ;
+Question 1 .
+Update the marks of everyone to marks +1 in the student table 
+
+CREATE DATABASE IF NOT EXIST db_name ; 
+USE db_name ; 
+CREATE TABLE tb_name ; 
+INSERT INTO tb_name   ;
+UPDATE tb_name  SET MARKS  = MARKS +1  ;
+SELECT MARKS FROM tb_name ; 
+DROP DATABASE IF EXIST db_name ; 
+
+The above query has no use for the Where command in the Update command . 
+
+DELETE COMMAND TO MAKE THE CHANGES : 
+
+Synatx  :
+DELETE FROM tb_name 
+WHERE conditon ;
+
+example to this is  :
+CREATE DATABASE IF NOT EXIST db_name ; 
+USE db_name  ;
+CREATE TABLE TB_NAME ;
+INSERT INTO TB_NAME ;
+DELETE FROM TB_NAME WHERE name = "emanuel" ;
+SELECT name , marks , city FROM TB_NAME  ;
+DROP DATABASE IF EXIST db_name ;
