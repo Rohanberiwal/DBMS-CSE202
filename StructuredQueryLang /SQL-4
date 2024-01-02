@@ -269,7 +269,23 @@ USE db_name  ;
 CREATE TABLE tb_name (name VARHCAR(100) , age INT NOT NULL , id INT PRIMARY KEY , marks INT  , grades VARCHAR(1)) ;
 INSERT INTO tb_name(name , age , id) VALUES ("rohan" , 19, 1) ;
 ALTER TABLE tb_name CHANGE name full_name VARCHAR(100) ;
-ALTER TABLE tb_name DROP grades WHERE marks > 80; 
+DELETE FROM tb_name WHERE marks <80 ;
 ALTER TABLE tb_name DROP grades VARCHAR(1) ;
 SELECT * FROM tb_name ; 
 DROP DATABASE IF EXIST db_name ;
+
+
+JOIN IN SQL  :
+Join is used to combine row from two or more tables , based on a related column between them .In shhort this is used ot join two or more tables that has the data of a common person .
+
+To perfrom the join in the SQL there has no realtion of the jpoin with the forgein key . IF there is a foreign key thenit is good else , if ther is no foregin key then even it is fine  .
+
+There are several type of join in the SQL :
+1. INNER JOIN->Use to get the comman data of the two tbales .
+2. LEFT JOIN -> Used to get the data that is either in the table 1 or is prent in the boht the table_1 and table_2 wiht the the data on the table_1.There is a important condition that the left join must havev  the data of the data_table_1. 
+3. RIGHT JOIN -> Similar to the left join but the table is tbale_2 and not table_1  .
+4. FULL JOIN 
+5. COMBINATION OF LEFT , RIGHT , FULL THAT IS THE OUTER JOIN . 
+
+The above is done using the venn diagram  .
+
