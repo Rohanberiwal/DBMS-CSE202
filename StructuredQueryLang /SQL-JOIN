@@ -1,0 +1,80 @@
+Structured Query Langauge -> JOIN
+There are several type of JOIN IN sql :
+1.INNER JOIN ->
+Returns the records that have the matching values in the both .
+
+Syntax  :
+SELECT cloumn_1
+FROM table_name 
+INNER join Table_name_with_which_we_are_supposed to joiin
+On tbale_name.column  = table_name.column  ;
+
+Whole motivation of the the inner join is to find the intersection of the two tables . 
+
+Example to this : 
+
+CREATE DATABASE db_name ; 
+USE db_name  ;
+CREATE TABLE tb_A() ;
+CREATE TABLE tb_B() ;
+INSERT INTO  // some functions 
+SELECT * 
+FROM tb_A
+INNER JOIN tb_B
+ON // Some basis for the condition of the two ;
+
+DROP DATABASE db_name ; 
+
+ALIAS Function -> this is also called as alternate functions or a alternate name of the functions. This is use to make the same indicastion to the table with very large names .
+
+Aliasing the two tables  :
+
+SELECT * FROM TABLE_A AS S INNER JOIN TABLE_B AS R ON S.id =  R.id ;
+The result for the above remains the same .
+
+
+LEFT join : 
+This is used to return all the records from the left table and matched records from the right table .
+Synatx  :
+
+SELECT * FROM TABLE_A AS A LEFT JOIN TABLE_B AS B ON A.left =  B.right  ;
+
+The result is the records from A wiht the intersecrtion of TABLE_A AND TABLE_B ;
+
+RIGHT JOIN  :
+This is the function simialr to TABLE_A INTERSECTION TABLE_B + TABLE_B . 
+Synatx is simialr to the left join .
+
+Syntax :
+SELECT * FROM TABLE_A AS A RIGHT TABLE_B AS B ON student 
+
+FULL jOIN :
+This is use to return all the records that in a match either in the left or in the right . 
+
+Syntax :
+
+SELECT * FROM TABLE_A AS A LEFT JOIN TABLE_B AS B ON A.LEFT  = B.LEFT UNION SELECT * FROM TABLE_A AS A RIGHT JOIN TABLE_B AS B ON A.RIGHT = B.RIGHT ; 
+
+This full join is bascially the combination of the left and the right join.
+
+The full join is also called as the full outer join in the MYSQl .
+There is no direct function of FULL join . The full join is the combination  of the left and the right join in  a nutshell. 
+
+
+Advanced Join in SQL :
+1.LEFT EXCLUSIVE JOIN 
+2. RIGHT EXCLUSIVE JOIN 
+ 
+1.LEFT EXCLUSIVE Join  :
+This return the records that has the content of the Table_B as null; 
+The synatx is very same to the all mentioned above  :
+Example to this is  :
+
+CREATE DATABASE IF NOT EXIST db_name  ;
+USE db_name  ;
+CREATE TABLE TB_NAME ;
+CREATE TABLE TB_NAME_1 ; 
+SELECT * FROM TABLE_A AS A LEFT JOIN TABLE_B AS B ON A.ID  = B.ID WHERE B.ID IS NULL;
+DROP DATABASE IF EXIST db_name ;
+
+In the deatiled point this is used to find the value of the venn diagram where the 
