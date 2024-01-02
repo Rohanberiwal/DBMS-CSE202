@@ -99,4 +99,177 @@ CREATE TABLE TB_NAME ;
 INSERT INTO TB_NAME ;
 DELETE FROM TB_NAME WHERE name = "emanuel" ;
 SELECT name , marks , city FROM TB_NAME  ;
+DROP DATABASE IF EXIST db_name ; 
+
+Revsisting the Foreign Keys : 
+The foreing key is asscociated with the the Primary key . A Word name refrance is used to refrance the foreign key . The forgein keys is always associated to a unique Primary key  .
+
+An example to the foreign key is  :
+
+CREATE DATABASE IF NOT EXIST db_name  ;
+USE db_name ;
+CREATE TABLE course(id INT PRIMARY KEY , name VARCHAR(50) , dept INT NOT NULL) ;
+CREATE TABLE tb_name(id INT PRIMARY KEY  , name VARCHAR(50) , course1 INT NOT NULL , FOREIGN KEY course1 REFRANCES course(id) ) ;
+DROP DATABASE IF EXIST db_name  ;
+
+In the above code the there is a code connection that is build using the forgein key and the refrance keyword .
+
+A second example to Foreign key   :
+
+CREATE DATABASE IF NOT EXIST db_name ;
+USE db_name  ;
+CREATE TABLE tb_name_1 (id INT PRIMARY KEY  , name VARCHAR(50) ) ;
+CREATE TABLE tb_name_2 ( id_teacher INT PRIMARY KEY , name VARCHAR(50) , FORIEGN KEY id
+CREATE DATABASE IF EXIST db_name  ;
+
+The key point in the forgin key is that each table has only one primary key , and in the table_1 suppose there is a primary key p_1 that i aslo present in the table_2 that is not the primary key then the primary key p_1 
+is a forgein key in the tbale _2  .
+
+
+The relation between the two keys  in a database can be sorted out using the enentity - relationship diagram that is the eer - daigram .
+The eer diagram is used to show how several table in a database are related  .
+
+Two table can have the same name of the paramter and the same primary key , that wont give a error in the SQL.
+
+The realtion betwwen the two key is connected to one other using the arrow this arrow is called the connection through foreign key ..
+
+
+Suppose in a table there is a forgein key f1 , then in the table where the foreign key is a primary key that table is called as the Parent table  .
+
+The table in which the primary key is use as the forgien key then that is called as the child table . 
+
+In short a table having a primary key and there is anathor table that has that same primary key then in the second table that priamry key is called as the forgein key and a special key is used to refrance the foriegn key .
+
+CASCADING USING THE FK  :
+The cascading is a funvtion that is written in the table where is there is a foregn key is defined . When a change is made in one of the key , then that changes must be defined or ,must also be reflected in the table that has the foreign key  .
+
+Command  :
+ON UPDATE CASCADE 
+ON DELETE CASCADE 
+
+Example to this is  :
+
+CREATE DATABASE IF NOT EXIST db_name ;
+USE db_name ; 
+CREATE TABLE tb_name (id INT PRIMARY KEY , name VARCHAR(50)) ;
+INSERT INTO tb_name VALUE  // Some query  ;
+CREATE TABLE tb_name_2 (id PRIMARY KEY ,  name VARCHAR(50) , FORGEIN KEY id REFRANCES tb_name(id) , ON UPDATE CASCADE ON DELETE CASCADE) ;
+DROP DATABASE IF EXISIT db_name ;
+
+Universal syntax for the foreign key  :
+Synatx  :
+FORGEIN KEY (name_forgein key) REFRANCES tablename(name of the key that is primary in that table) ;
+
+To remove the table use the DROP commamd .
+
+Table related query  :
+Alter command  : This commad is use to chnage the schema or the table design  .
+The schema of the table is not the design but also the (column , datatype and the contraint that the table variable holds) ;
+
+The alter command is used in the combaintion with a lot of sql functions  :
+1.ADD command  :
+Example :
+ALTER TABLE tb_name ADD COLUMN_1_NAME column_name datatype contriant  ;
+
+The above is used to add some new in the pre-exisitng table . 
+
+2.DROP command 
+Example 
+ALTER TABLE tb_name  DROP column_name datatype constraint  ;
+
+3.RENAME constriant  :
+ALTER TABLE tb_name RENAME TO new_table_name ;
+
+Example code for each of the above is  :
+1.Add command :
+CREATE DATABASE IF NOT EXIST db_name  ;
+USE db_name ; 
+CREATE TABLE tb_name (some column wiht datatype and constraints ) ;
+INSERT INTO // some query ; 
+ALTER tb_name ADD name VARCHAR(50) ;
+SELECT * FROM tb_name  ;
+DROP DATABASE IF EXIST db_name  ;
+
+2.DROP Command 
+CREATE DATABASE IF NOT EXIST db_name  ;
+USE db_name ; 
+CREATE TABLE tb_name (some column wiht datatype and constraints ) ;
+INSERT INTO // some query ; 
+ALTER tb_name DROP  name VARCHAR(50) ;
+SELECT * FROM tb_name  ;
+DROP DATABASE IF EXIST db_name  ;
+
+3.REName :
+
+CREATE DATABASE IF NOT EXIST db_name  ;
+USE db_name ; 
+CREATE TABLE tb_name (some column wiht datatype and constraints ) ;
+INSERT INTO // some query ; 
+ALTER tb_name RENAME TO tb_name_1;
+SELECT * FROM tb_name  ;
+DROP DATABASE IF EXIST db_name  ;
+
+4.CHANGE table  :
+//Syntax  :
+ALTER TABLE_NAME 
+CHANGE COLUMN OLD_COLUMN_NAME TO NEW_COLUMN_NAME new_datatype new_constraint;
+
+
+5. Modify command  :
+This is used to modify the name of the column in the table  :
+Syntax  :
+ALTER tb_name MODIFY  OLD_name_column neW_datatype , new _constriant ;
+
+Example to this is  :
+CREATE DATABASE db_name ;
+USE db_name; 
+CREATE TABLE tb_name ; 
+ALTER tb_name MODIYFY name VARCHAR (10) ;// and not VARCHAR(50) ;
+DROP DATABASE db_name ; 
+Example :
+
+CREATE DATABASE IF NOT EXIST db_name  ;
+USE db_name ; 
+CREATE TABLE tb_name (some column with datatype and constraints ) ;
+INSERT INTO // some query ; 
+ALTER TABLE tb_name CHANGE name name_of_person VARCHAR(50)  ;
+SELECT * FROM tb_name  ;
+DROP DATABASE IF EXIST db_name  ;
+
+Using the default commamd wiht the alter command :
+CODE  :
+CREATE DATABASE IF NOT EXIST  db_name ;
+USE db_name ;
+CREATE TABLE tb_name ;
+ALTER tb_name ADD  COLUMN name_of VARCHAR NOT NULL DEFAULT "ROHAN" ;
+DROP DATABASE IF EXIST db_name ;
+
+
+How to delete the whole data of the table  ?
+To delete the full data from the tbale or to make the table empty use the TRUCNATE command in the SQL  .
+
+Syntax  :TRUNCATE TABLE tb_name ;
+
+Differnce in the DROP and the TRUNCATE command  :
+The DROP command delete the whole tbale means there is no table left out , whereas the TRUNACATE command delete the data of the table . 
+
+
+Example :
+CREATE DATABASE IF NOT EXIST db_name ; 
+USE db_name ; 
+CREATE TBALE tb_name ;
+TRUCNATE tb_name ;
+DROP DATABSE IF EXIST db_name  ; 
+
+
+PRACTICE QUESTION SOLUTIONS : 
+
+CREATE DATABASE IF NOT  EXIST db_name  ;
+USE db_name  ;
+CREATE TABLE tb_name (name VARHCAR(100) , age INT NOT NULL , id INT PRIMARY KEY , marks INT  , grades VARCHAR(1)) ;
+INSERT INTO tb_name(name , age , id) VALUES ("rohan" , 19, 1) ;
+ALTER TABLE tb_name CHANGE name full_name VARCHAR(100) ;
+ALTER TABLE tb_name DROP grades WHERE marks > 80; 
+ALTER TABLE tb_name DROP grades VARCHAR(1) ;
+SELECT * FROM tb_name ; 
 DROP DATABASE IF EXIST db_name ;
