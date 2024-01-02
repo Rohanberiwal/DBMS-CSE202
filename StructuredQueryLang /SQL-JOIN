@@ -77,4 +77,52 @@ CREATE TABLE TB_NAME_1 ;
 SELECT * FROM TABLE_A AS A LEFT JOIN TABLE_B AS B ON A.ID  = B.ID WHERE B.ID IS NULL;
 DROP DATABASE IF EXIST db_name ;
 
-In the deatiled point this is used to find the value of the venn diagram where the 
+What is Self Join ? 
+This Join is used to join the Table to itself  . 
+The example to this is : 
+
+SELECT column_name 
+FROM table_name as A
+JOIN table_name as B 
+ON a.column_name =  B.column_name ;
+
+Union operation :
+It is used to find the combined result - set of two or ,more Select statement . Give the Unique Records .
+Syntax  :
+SELECT column from table_A
+union 
+SELECT column from table_B; 
+and so on .
+
+UNION 	operation remove the duplicatyes elements from the two .Only the common elements are left out  .
+
+
+RULES for the use of Union operation  :
+1. Every select should have the same number of column .
+2. Column must have similar data type and not different data type  ,
+3. Column is every SELECT should have the same order .
+
+
+To get the duplicate in the union of the different SELECT statements :
+We use the Union all operator that is used to find the union of the several SELECT and return the duplicates as well .
+
+The use of the union all is to perfrom the FULL JOINT OF THE tables .
+
+Nested queries / Sub-query :
+These are also called as the inner query and it is in the combiantion with some of the other query . 
+It involes the use of 2 Select statements   .
+
+Syntax :
+SELECT column
+FROM table_name 
+WHERE column_operator 
+(Sub-query) ;
+
+In the sub-query there is a a use of either of any operators like the BETWEEN or maybe any other operator .
+
+The main use of the Sub-query is to make the sql code a dynamic code so thaty the alterion in the code does not make any changes or do not halter the working of the code .
+
+An example to the sub-query  :
+
+SELECT AVG(mark) FROM student ;
+SELECT name , marks FROM student WHERE marks > SELECT AVG(marks) FROM student ;
