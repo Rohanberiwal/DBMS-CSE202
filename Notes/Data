@@ -2,8 +2,10 @@ Data base management system (DBMS)
 
 What is data ?
 
-The way the computer stores the infromationm of the data in the from  of the bit . This raw collection of the bits is the data .
-Any type of the description stored in the memoery of the computer is called as the data . The example to these is the image , text file to eveything in the computer . 
+The way the computer stores the infromationm of the data in the from  of the bit . 
+This raw collection of the bits is the data .
+Any type of the description stored in the memoery of the computer is called as the data .
+The example to these is the image , text file to eveything in the computer . 
 
 Data in the memory ->
 The data in the memeory in as the data types either as the float , integer or anything . 
@@ -51,3 +53,8 @@ The MS is basically the part where the operation on the data is done
 	> update 
 	> add
 	> ascess
+
+File system vs Database mamagement system  :
+The main overhead in the dbms and the file system is that if there is some 
+chnages made in the data the dbms can do the necessary changes easily at the 
+different places whereas the file system there are severak changes that would have to be made . 
