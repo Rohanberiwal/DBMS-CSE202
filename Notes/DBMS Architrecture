@@ -1,0 +1,7 @@
+DataBase Management system 
+Abstraction  :Simplification of the system for the user is called as the abstraction .
+Privatizing the context of the code or the system is called as the Abstraction  .
+
+What is abstraction  in dbms ?
+The dbms has the context of providing the abstract view of the data to the user .
+The view of the data to the user is in the form of the tables and no view on the data stream is being used  .
