@@ -1,7 +1,19 @@
 DataBase Management system 
-Abstraction  :Simplification of the system for the user is called as the abstraction .
-Privatizing the context of the code or the system is called as the Abstraction  .
+Abstraction  :Simplification of the system for the user is called as the abstraction .Privatizing the context of the code or the system is called as the Abstraction  .
 
 What is abstraction  in dbms ?
 The dbms has the context of providing the abstract view of the data to the user .
 The view of the data to the user is in the form of the tables and no view on the data stream is being used  .
+
+View of data -> Three schema Architecture  
+This is called as the abstract view of the data . The main motivation of this is to just do the abstraction .
+There are three view of the data and the view of this is to enable multiple ascess to the same data  .
+
+1.Internal level 
+The lowest level of the abstraction  desbcribes how the data is stored and makes the use of the low level of the data - strcutres .
+This has the physical schema that descibes the physical strorage of the DB.
+The goal of this level is to have a efficeint ascess of the data .
+
+2.Conceptual level of stroage  :
+This describes the conpectual schema desbcies the schema of a database at the conceptual level  .
+This describes what data can be stored in the DB and what is the realtionship exsit among those .
