@@ -1,0 +1,32 @@
+Transction 
+
+What iS Transction ? 
+Set of instruction is called as process in the general computaion but in the point of DBMS we called the instrcution or the processes as the Transction .
+
+Every instruction in the computation is ATOMIC .
+The meaning of atomic is that either that compution executed fully or it is not executed . There is no partial execution of the prorcess .
+
+In the DBMS the tranction or the code is executed fully unlike the the operating system where the code may be vunerbale to a  system failure at a ooint in the code .
+
+In short the transction of the DBMS Is very close and in the asscocaiton to the Atomicity .
+
+Several instruction that are bundled up that is called as the transction  .
+
+The word Transction in the DBMS is also assocaited with the Consistency .
+
+There are two main tranction in the context of DBMS  :
+1.Read(X)
+2.Write(X)
+
+Either there could be a reading operation or there could be a upation possible in the whole code .
+
+Desirable properties of the Transction  :
+The smallest unit of the atomicity in the DBMS are the transctions .
+For the consistnecy the trnasction of the DBMS are supposed to be consistent .
+
+Properties of Transction :
+There are 4 main proeperties of the Transcrtion and the data base to be consistent .The abberevation is called as the ACID  .
+1.A->Atomicity 
+2.C->Consistency  
+3.I->Isolation
+4.D->Durability 
