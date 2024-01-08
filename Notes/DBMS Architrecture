@@ -1,19 +1,99 @@
-DataBase Management system 
-Abstraction  :Simplification of the system for the user is called as the abstraction .Privatizing the context of the code or the system is called as the Abstraction  .
+DBMS Architecture :
+What is asbtraction ?
+The hiding of the working of the data is called abstaction and the view if called as the abstract view .
 
-What is abstraction  in dbms ?
-The dbms has the context of providing the abstract view of the data to the user .
-The view of the data to the user is in the form of the tables and no view on the data stream is being used  .
+The DBMS has to provide a abstract view of the data that are present in the order strructure in the form of the tables .
 
-View of data -> Three schema Architecture  
-This is called as the abstract view of the data . The main motivation of this is to just do the abstraction .
-There are three view of the data and the view of this is to enable multiple ascess to the same data  .
+There has to be a hiding of the details of the un-necessary table data in the 
+dbms that not has to be used or has to be ascessed .
 
-1.Internal level 
-The lowest level of the abstraction  desbcribes how the data is stored and makes the use of the low level of the data - strcutres .
-This has the physical schema that descibes the physical strorage of the DB.
-The goal of this level is to have a efficeint ascess of the data .
+Three Schema Architectrue -> View of data  
+1.Physical data / Internal data :
+This is the lowest level of abstraction that is stored .
+In this level there is a use of the low level data structures  .
+This physcial or the Internal structure debscirbes the internal view of the data in the DBMS. 
 
-2.Conceptual level of stroage  :
-This describes the conpectual schema desbcies the schema of a database at the conceptual level  .
-This describes what data can be stored in the DB and what is the realtionship exsit among those .
+
+The GOAL : this level has the goaal  of the efifcient ascess of the data . 
+
+2.Logical level  :
+This is the conceptual level and describes the level of the data at the conceptual level .
+This is used to store the content of the data in the DBMS and the tables .
+DB-algorithms that are used to define the level and the efficincy of the data storage . 
+
+view Level / Extenal level :
+This is the highest level that describes the interaction of the system By providing different view to the different levels. 
+
+In short the Physcial level of the data is -> How the data is stored in the file or in the memeory or in hte disc .
+This level descirbes the alogithm behind the storing of the data . 
+
+
+In the conceptual level  the data in the tables is shown and is managed , this level is use ot show the way the data in teh tables is dispalyed . 
+
+
+The conversion of the data from the ohyscial and the logical level is called as the physical to logical level mapping of the data  .
+
+
+The relaton between the different tables contents is calles the logical Relation of  the data . 
+The change in the data at the physcial level , the same changes are shwon in the dtaa ata the Logical level or at the conceptual level.
+
+The highest level of the abstraction in the DBMs is at the view level and the schema ata this level is called as hte view schema  .
+
+At the external level , a database contains several SCHEMA called as the Subschema  .
+
+This veiw level also provies a level of securrity at the severak oarts of the DBMS . 
+
+Instance of DBMS  :
+The inputs or the values that are stored in a particular database at a given point of time is callled as the instance of the data base .
+
+Overall desgin  of the DBMS wiht the logical , physical and External schema is called as the Schema . 
+
+Point or Rules for the DBMS schema :
+1.atrributes of the tables 
+2.Consistency contraints - Use of the primary key or the use of the foreign  key  .
+3.Reltionships . 
+The most important schema in the whole context is the Logical schema because htat is the one that defines the input and the contents of the table. 
+
+
+Data Models  :
+Provides a way to define the design or the schema of the DB. 
+The model is the conceptul way of definng the data  , data relationships and the data scemantics . 
+
+There are several models , for exmaple ER model , relational model , object orieted model and the object - realtional model. 
+
+Data base Langauge :
+Data base defination Language -> to specify the database schema . 
+Data Manipluation Lnagauge -> to express the database and the queries and the updates .
+
+
+What does the DML or the data manipluation language contains ? 
+The DML contins the following : 
+1.Retrival 
+2.Insertions 
+3.Deletions
+4.Updations 
+
+Query language , that is use to find the data from the databas .
+SQL has both DML AND THE DDL  .
+
+
+cross - converstion of the Lnagauge to the Backend of the database server :
+There has to be differnce or the conversion made to the langauge of the servers . 
+
+The administator send the query of the data ot the actual sevrver and then convert the actual query of the package to the real qiery and make the computations.
+The reply is send again back to the complier and the output is shown . 
+
+
+Data base administator  :
+This has the centeral control of both data and the program and is used to ascess both the data. 
+There are several task that the DataBase administrator has to do  :
+1.Schema defination 
+2.Storage structure and ascess methods 
+3.aurthoirzartion method 
+4.Routine Maintianence 
+
+There are several server for the Architeciure of the DBMS :
+Some of the DBMS values are the T1, T2 and finally the T3 server .
+The best application form the abobe is the WWW architecture . 
+The Teir -3 network is very vast and has a lot of latency due to a lot of connected networks. 
+The scalebility is a factor in the distributed networks and the distributed servers. 
