@@ -25,7 +25,7 @@ An example to the above are:
 Weak : age , name , batch 
 strong : address  , ph.no
 
-The unique atteibute of the Chracter in thev E-R model is called as the Primary key .
+The unique attribute of the Chracter in thev E-R model is called as the Primary key .
 
 entity set: It is a set of the same type that share the same properties and the same attributes .
 The example to this is  : student is a enitiy set  .
@@ -35,3 +35,56 @@ Set of the above exmple is called as the entity set .
 
 
 Attributes : 
+There exist properties of the person that are callld as the attributes of the perosn. Every attribute has a permitted value . The attributes has domain , value that could either be permiteed asnd maybe not permittted . 
+
+Relationship between the entity  :
+The realtion is shown  using the normal , realtions that were in the java langauge  . 
+
+Type of attributes  :
+Simple attribute  :These are the one that cannot be divided further .
+These include exmaple like the person's phone number , age etc. 
+
+Composite attribute : These are the once that could be dvide into the sub-parts and these include the exmaple like the address of the person , name , etc . 
+
+Single values attribute : These are the one wiht onyl one value. 
+Example the student id , loan number of the person.
+
+Multi-valued output: These are the one that has more than one value .
+Example to this is the phone numebr . 
+
+Derived attribute : These are the one that are derived form other key attributes . These are often related. 
+
+Null value : These are the one that have the value as NULL or as empty value .  These in the database are use to indicate that these area or the contents are empty or may not applicable to the database. Somtime these are use to indicate the empty value as well .
+
+The devried attribute are shown using the dotted circles . 
+Null does not mean the value is 0 , but tyhe null means that there is no value and the container type is empty for that. 
+
+Relationship between attributes  :
+These are always between two or more than two attributes  . These may be between two entities .
+Example to this is  : person-> has-> car .
+
+Difference between the Strong and the weak entity  :
+The one that are independnt are called as the Strong entity whereas the one that cannot exist together are called as the weka entity  .
+
+These entity extend the relationshiop between the attributes  :
+1.Strong realtionship : These are the attribute of the strong entity . 
+These are recognised with a primary key .
+
+2.Weak realtionship : These are the one that are not recognised with the Primary key .
+
+The weak entity are dependent on the strong entity . 
+
+Degree of relation :
+In a relation the number of entity in total or ther sum is called as the Degree of that particular relation .
+
+The degree of the realtion is based on the number of the entity in the rlation and based on those therr are  :
+1.Unary realtion : Dgree is 1
+2.Binary : degree is 2 
+3.Ternary relartionship : 3 degree relationship .
+
+Relationship constraint:
+Mapping cardinality :Number of entities to which anathor realtion that could be mapped or associated via  a reltionship. These are simialr ot the basic maths functions :
+1.One to one
+2.Many to one 
+3.One to many 
+4.Many to many 
