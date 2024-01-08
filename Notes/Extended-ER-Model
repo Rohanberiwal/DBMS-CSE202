@@ -5,7 +5,8 @@ This cover the division of the poeple in several group and division of their ent
 This division of the same entitiy and theier attributes make the division  make the specialisation better .
 
 
-The example to this specialisation is that in a class Person  : This peroson can be divided into the sub sets of the customer and employee . The attibute of the age maybe the employee id and the cusotmer maybe some passcode . 
+The example to this specialisation is that in a class Person  : This peroson can be divided into the sub sets of the customer and employee . 
+The attibute of the age maybe the employee id and the cusotmer maybe some passcode . 
 This is the way the specialisation of the reosure are done in the Extended ER diagram . 
 
 The child entity here in the abive example are the Customer and the employee class also the Person's attribute are being taken or can be inhertiend by the two class .
