@@ -1,0 +1,37 @@
+ER-model (data-model)
+
+The data models work in  the layer and in the forms of the conceptual models
+and these models works for the fine and the efficiency of the proper DBMS . 
+
+The above model is called as the Enity-realtion model . 
+
+what is the ER model  ?
+The ER model is a high level model based on the perception of a real world thay consist of the collection of basic objects called the enities and of the relationship among these projects . 
+
+Grahpical represenation of the model is called as the ER diagram and the Blueprint of this is the DB .
+
+Every eninty has attributes and these attribute define the data for the input .
+
+The diagram representing the attrinute with the centeral cahracter is called as the ER diagram and the whole diagram in a nutshell is called as the  ER model . 
+
+Entity  : This is a object in the real world that is distinguishable from the other objects.
+It has a physical significane .
+Each student in a college is an entity . 
+
+Strong : This can be uniqeuly identified .
+Weak  : This cant be uniquely identidied and this is dependent on the other strong enity . 
+
+An example to the above are: 
+Weak : age , name , batch 
+strong : address  , ph.no
+
+The unique atteibute of the Chracter in thev E-R model is called as the Primary key .
+
+entity set: It is a set of the same type that share the same properties and the same attributes .
+The example to this is  : student is a enitiy set  .
+Customer of a bank is a entity set. 
+
+Set of the above exmple is called as the entity set .
+
+
+Attributes : 
