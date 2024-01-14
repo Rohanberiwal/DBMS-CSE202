@@ -88,3 +88,34 @@ Mapping cardinality :Number of entities to which anathor realtion that could be 
 2.Many to one 
 3.One to many 
 4.Many to many 
+
+Desiging Database 
+ER modelling  :
+The ER based model is also called as the Enity relationshiop model that is a collection of the object called the enenties and of the relationship between the objects. 
+
+There has to be a realtionship between the eninties between the models. 
+
+Entity : The distinguishable objects from one anathor is called as the Enity. There has to be attribtues defined so that there is a perfect Entity  set that work finely .
+
+To describe the entity there has to be the attributes defined finely  .
+
+Domain  : A unique set of values permittted for an attribute . These arre very very specific and these have to stick to  the context of the attribute of the entity . 
+
+Relationship  : An assocaition amaong two  or more entity  . The relationshipm are supposed to be always between the two entity . 
+
+A relationship set is a set of similar type .These are to the context that the primary key is used in the identification  as well as the distinguising betweent the two input that may be same .
+So we can say that the key is the attribute of that makes out the difference based on some set of attribute that make differnce for the entity inputs or the entity set . 
+
+Key could have a single attribute ior key could have a set of attributes .
+
+ER diagram  : Major three diagram 
+1.Entity set ->represented by a rectangular box 
+2.Relationship set -> represented using a dimond
+3.Attribtues -> using  a oval.
+
+These above are similar to the UML diagram that were in the advanced programming .
+
+Relationship between the two entity  :
+1.Urnary 
+2.binary 
+3.teranry 
