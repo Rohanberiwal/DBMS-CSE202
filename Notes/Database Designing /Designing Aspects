@@ -1,0 +1,32 @@
+Desiging Database 
+Data Models 
+A collection of conceptual tools for descirbing data relartionships , data scenamtics and consistency is called as the data model .
+
+1.Entity realionship models 
+2.relational database models.
+
+ER model :
+The entity realionship model comsist of the basic object called as entities and of realionship between these objects .
+The set of all the enitity is called as the entity set  .
+
+Relational model ?: these are the collection of the data in the form of tables to represent both the data and the realtionship among them or among the data set .
+
+Some of the other data models :
+1.Object orinted model 
+2.Network data model 
+3.Herierichal data model
+
+In the first one the core principles of the object orinetd design and the model is used. 
+
+Designing of databases :
+1.Requirement Analysis 
+2.Conceptual Database Design ->ER deignsing
+3.Schema Refinement->Normalization for the fine tuning  
+4.Logical database design ->Relational modelling 
+5.Physical database desing ->Storage and indexing 
+6.External database design 
+7.Security design 
+
+The relational modlling if the database is always done using the ER diagram .
+
+ER modelling ->ER daigrams -> Relational databases .
