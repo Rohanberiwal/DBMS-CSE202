@@ -1,0 +1,44 @@
+Models in the DBMS and some formal defination 
+
+Disadvantage of using a file systrm rather than a DBMS  :
+1.Data redundancy and data inconsistency : Since there are independent files then the changes in the file cannot be made easily , hence the data inconsistency is a big problem.
+
+2.Difficuly in ASCESSING the data : When the data set is very large then the ascessing of the data is a very big problem .
+
+3.Data Isolation : There could be file of different formats and hecne the data extraction  is a very tough problem .
+
+4.Integrity Problem : There are the problem related to the atomicity and Transctions. 
+
+5.Atomicity problems : These are the insconsistnet changes in the files. These are supported using the WAL protocols in the files. These are the protocals that atre very useful in the data retrival and the checking out the data problem in the data changes .
+
+6.Concurrent Ascess problems :  These are sort of the race cmdtions in  the ascess of the same data page in the data base management leadinf to a insconsistent result  .
+
+7.Security problems in the file due to easily changes in ther permission .
+
+Instance and schema : The collection of information stored in the data base at a particualer moment is called as the instance of the database . 
+
+Schema: design of the database or the tables in the database. 
+
+DDL : DATA DEFINATION LANGAUGE : Use to change the schema of table or the dbms . 
+DML : DATA MANIPULATION LANGUAGE: Use to change the isntance of the database.
+The DML are of two types :
+1.Procedural language  : user are required ot specify the data is/are needed and how to get those data . 
+2.Non procedural Language  : These are also called as the decelerative langauge where the data is only specified and the language isteld gets it . 
+
+SQL is DML non decelerative one . 
+
+
+View of data  :
+These include 3 level of asbtraction  :
+1.Physical view 
+2.Logical view
+3.External View / View level
+
+Structures of data base : 
+1.Strorage Manager : The content of the database are ascessed using the data storage manager. 
+2.Query Processor Components /Query Engine ->This is use to do bifercation of the process of differentation of the incoming query  .
+
+The slowest process in  the computer is the process of asscessing the disk . If the proces of the storgae and the query resolveing is hvey then the latency will be very much and then the runtine of the query would ve a lot  .
+
+In between the process of the query optmisition is done that make the proces of the storgae ascess very easy . 
+The rest are the two and the three teir process that are useful sometime .
