@@ -1,0 +1,19 @@
+WAL protocol Basic Information 
+
+The Write-Ahead Logging (WAL) protocol is a mechanism used in database systems to ensure durability and recoverability in the event of a system crash or failure. 
+It is commonly employed in relational database management systems (RDBMS) and some NoSQL databases. 
+The purpose of WAL is to maintain a record of changes to the database before the actual modifications are made to the data files.
+
+Logging Changes: Before any modification is made to the database's data files, the changes are first recorded in a separate log file. This log file is often called the write-ahead log.
+
+Sequential Write: The write-ahead log is designed to be written sequentially. This means that write operations to the log occur one after the other in a continuous sequence
+which is more efficient than random access writes.
+
+Commit Record: When a transaction is committed, a commit record is written to the log. This commit record indicates that all changes made by the transaction 
+have been successfully written to the log, and it serves as a point of reference for recovery.
+
+Durability: After the commit record is written to the log, the actual changes to the database's data files can take place.
+ This process ensures that the changes are durable, meaning they survive even if a system crash occurs.
+
+Recovery: In the event of a crash or failure, the database can use the write-ahead log to recover. During the recovery process, the system examines the log
+to determine which transactions were committed and which were still in progress at the time of the failure. The changes can then be replayed from the log to bring the database back to a consistent state.
