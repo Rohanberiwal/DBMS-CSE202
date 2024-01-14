@@ -1,0 +1,27 @@
+Query Evalutaion Engine 
+
+A query evaluation engine, in the context of databases and database management systems (DBMS), is responsible for processing and executing queries submitted to the database.
+It plays a critical role in retrieving, manipulating, and presenting data based on user or application requests.
+The query evaluation engine interprets and executes queries written in a database query language, such as SQL (Structured Query Language).
+
+Parser: The engine includes a parser that analyzes the query syntax and structure to ensure it follows the rules of the query language. If the query is valid, the parser generates a query execution plan.
+
+Query Optimizer: The query optimizer evaluates different strategies for executing a query and chooses the most efficient execution plan. It considers factors such as indexes
+join methods, and other optimization techniques to minimize the time and resources required to fulfill the query.
+
+Execution Plan: The execution plan is a detailed outline of how the database system will process the query.
+It specifies the sequence of operations, the order in which tables are accessed, and the methods used for joining and filtering data.
+
+Access Methods: The query evaluation engine interacts with the storage subsystem to access data. 
+It may utilize various access methods, such as index scans, sequential scans, or other techniques, depending on the execution plan.
+
+Concurrency Control: In a multi-user environment, the query evaluation engine ensures that concurrent access to data is managed correctly to maintain data consistency.
+This involves using mechanisms like locking and isolation levels.
+
+Transaction Management: The engine handles transactions, ensuring that operations within a transaction are atomic, consistent, isolated, and durable (ACID properties).
+It manages the commit and rollback of transactions.
+
+Result Processing: Once the data has been retrieved based on the query, the engine processes the results and formats them according to the query specifications. 
+It then returns the results to the user or application.
+
+Caching and Buffer Management: The engine may employ caching and buffer management strategies to optimize performance by reducing the need to access disk storage for frequently accessed data.
