@@ -1,0 +1,31 @@
+Attributes In advanced DBMS  :
+1.Single valued vs multivalued 
+2.Simple vs composite attribute 
+3.Given vs Derived attribute 
+4.Prime vs Non prime Attribute 
+
+The above are bifercated  based on the type of the value that each od them can store or more professionally these are classified based on  the domain  :
+
+Single vs multi valued attribute :
+
+1.Single valued  : These are those attribtue that has to be unique or these are the one that can only be one . Exmaple to the signle value attribute is /are : Roll_number of student or age of a student .
+
+2.Multi valued attribtue : Shwon in the ER diagram using the double oval or the concentric ovals , these are the attributes where one or more than one value is veyr much possible .
+Example to this is  : Phone_number
+
+Simple vs composite attribute :
+1.Simple  : These are the one that canot be sub-dvided or may be duvide further more . Exampler to this is age , phone_number .
+
+2.Composite value  : These are the one than can be sub divided and may be further have subsets . Example : address into pincvode , street , province .
+
+ 
+Given and Derived attribute :
+1.Given  : These are the attribte that in the diagram or are asked in the diagram  are called as the Guven attribute . 
+2.Derived : These are the one that are taken or are dervued from the Given attribute . Tjhe drivied are the subset of the Derived attribute .
+Example: The age can be derived from the brithdate . 
+
+Prime vS NoN Prime attribute :
+1.Prime attribtue :  These are the one that are the part of the key . These are the attribute of the enity that is used to identify the entity itself or that distinugush the entity from the other entity sets . 
+
+2.Non prime attribute:  These are the one that are not the part of the key .  Key here  means the primary key  .
+The primary key are shown using the the oval wiht the undrline on  the name of the attrbute .
