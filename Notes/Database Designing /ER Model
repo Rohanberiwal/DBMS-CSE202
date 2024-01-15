@@ -1,0 +1,76 @@
+Desiging Database 
+ER modelling  :
+The ER based model is also called as the Enity relationshiop model that is a collection of the object called the enenties and of the relationship between the objects. 
+
+There has to be a realtionship between the eninties between the models. 
+
+Entity : The distinguishable objects from one anathor is called as the Enity. There has to be attribtues defined so that there is a perfect Entity  set that work finely .
+
+To describe the entity there has to be the attributes defined finely  .
+
+Domain  : A unique set of values permittted for an attribute . These arre very very specific and these have to stick to  the context of the attribute of the entity . 
+
+Relationship  : An assocaition amaong two  or more entity  . The relationshipm are supposed to be always between the two entity . 
+
+A relationship set is a set of similar type .These are to the context that the primary key is used in the identification  as well as the distinguising between the two input that may be same .
+So we can say that the key is the attribute of that makes out the difference based on some set of attribute that make differnce for the entity inputs or the entity set . 
+
+Key could have a single attribute ior key could have a set of attributes , there are the things that helps in the identification of the input or the tables values.
+
+ER diagram  : Major three diagram 
+1.Entity set ->represented by a rectangular box 
+2.Relationship set -> represented using a dimond
+3.Attribtues -> using  a oval.
+
+These above are similar to the UML diagram that were in the advanced programming .
+
+The attiibutes are related to the entity sets and are shown using the raltionships by a straight line between the realrin ship and the attirbute . 
+
+Relaionship-> dimonad box
+Relationship between the two entity  :
+1.Urnary ->This is the relationships between the entitry of the same entity sets .
+2.binary ->This is the realrtionship between the entity of two entity set .
+3.teranry ->This is the relationaship between teh entity of three or more than three entity set .
+
+
+Binary realitonship 
+There is a reationship in the entites of two sets . So in the context of the binary reelaionships , there are two entity sets that are connected through a realtionship .
+Example to this is  : Rohan works on aliwneware  .
+Here the rohan and alienware are two entity sets .
+
+Ternary :  Three or more entityt or the entity set are conneted using a single or may be more than one realtionship . The example to this is  : Rohan ususe the alienware sincee 2023 .
+The thrid attribute or the erntity set here si 2023 .
+
+
+The attribtue of realionship is called as the descriptive attribute  . The means the conext of the realionship or the name of the realtionship is called as the descrptive attribute.
+
+The example of the descrpitve attirbute is : customer purchas shirt . Here the puirhase is a descriptive attribute . Now the time when the shirt is puchaes is a desciprtuve attribute of the purchase statement .
+
+There is no possibility of more than three realionship in the ternaryu relatiosnhip .
+
+Mapping cardinality " This is the size of the set of the relationship by whihc the entity are connected together .
+This is used to give a idea on how many entity are connected to the other entity by ising which realion and what is the inside length of that relatiosnhip .
+
+Official defination of Mapping cardinality  : The maximum number of relationship instance in which an entit can participate . 
+
+The Type of the mappin cardinality  :
+1.One one -> citizen to aadhar card number
+2.Many to one -> citzen to goverment of the nation 
+3.one to many ->employee  mananing the team of the company
+4.many to many -> citizen to the laptops . or the customer and the porducts .
+
+Participation Constraints  : sepcifies the presence of an entity when it is realted to anathor entity in a relationship type . Type of the participation  :
+1.Total participation-> all the entity in the entity set patticipate in the patticular relationship .
+2.partial participation  -> some of the entity participatye in the entity in the particular relatiosnhip .
+
+There are multiple varition to represent in the er modelling . The partila relationaship in the constraint is shown using a single line whereas the total participation is shown using the two stsright line form relsionhip to the entity  .
+
+Weak and the strong entity :
+1.Strong entity  : These are the one that can be uniquely identified by its attribute alone.
+2.Weak entity  : These are thr one that are not identifed uniquely by using its attribute alone.
+
+We can aslo say that those identiy that have theri own concrete attribute are called as the Strong whereas the one that cannot have the concreate attrbite or are depenent on the strong r called as the weak one .
+
+Representaion of the weak and the strong entity and their sets  :
+1.strong  : same rectangle 
+2.weak  : using the double concentrix rectangle. 
