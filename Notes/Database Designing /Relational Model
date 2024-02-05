@@ -1,0 +1,77 @@
+Relational Model
+This is also a type of datamodel  and use to show the relationship between teh data and the data schema .
+In this the data is represneted in the tabular form called as the realtional 
+tables .
+
+In  the relational model the tables are themselves the relations and no need to make the outer connections .In this the attribute are the columns. 
+In this the row represent the entries or the raw user that are participating in the database . This are called as the tuples in the database .
+
+Some of the official defenations in the relational model:
+1.Degree ->This are the total number of attribtues in the realtional table .
+2.Cardinaliy -> this is the total number of the tuple in  the tables of the model like -> for the degree 4 and the attribute -> name , age ,roll number, the cardinality is 1 whenr only  there is "rohan" , 19 , 2022413.
+
+The conceptual schema of the databse is designed based on the two attributes :
+1.ER model
+2.Relational schema
+3.Rdbms->software that is used to implemen the second point .
+What are Rdbms ?
+Mysql , oracale and other stuff  .
+
+How is the triangluar /dimond realtionship that is shwon  in the relational model ?
+
+The dimond relation here are called as the forgrin key connection, the forgein key are the one that are use to make the connection between the twop realtional tables .
+Tuple-> Use to show the single data point in the relation.
+
+Realtional Key-> these are the attribute that are use to define each of the tuple .
+
+What are the properties for  the realtional table ?
+1.The name of the table are very distainct and not same anywhere .
+2.The value in the relational model are atomic and never brokenable .
+This means the these are non composite attribtue and connot be divide further  .
+3.Attribute must also have unique name and the values .
+The tables must follow the intergity contraints acrros the tables and msut have the data constisitency wiht the appropriate tuple inputs .
+
+What are the keys ?
+1.Reduant attribute -> Those who are not needed but are still there . 
+2.Super key(sk) -> Any permuation and combniantion that uniquely define or identify each of the attribute  .
+
+3.Candidate key -> Minmum subsets that can uniquely identify each of the tuple. It cannot have any of the redundant attribute .
+Useless attribtue are the one that are removed  .
+
+4.Alternate key ->all ck expect primary key  .
+5.COMPOSITE KEY -These are the p and c of the total attribtue but the leng is min of 2  inclusive2.
+
+The most repetation or those attribute whihc could be same for several tuple would also be counted as the redundant attribute .
+
+what is the difference in the primary and the candidate key ?
+The primary key is a candidatye key that has  number of the attribute .
+
+******Supper key can be null adn candidate key cannot be null*****.
+****ALL THE P AND C ARE THE SUPER KEY OF THE ATTRIBUTE**** .
+
+
+The table in which the primary key of a table is the foreign key that is called as  the child table or  the refrance table  or the parent table relation table.
+
+
+Compound key - The primary key that is formed using the two forgein key . 
+
+SURROGATE KEY ->This basically the syntheitic primary key that is use to autogenerate the key in the table . In this hte integer value is an auto geenrated one.
+ 
+what are the integrity contraints ? 
+The integraity conmstraints are ->
+First are the CURD operatiosn-> create , update , reaad and delete  .
+To do the CURD operations we have to maintian a proper check of the integrity contraints ... are being maintained 
+-> inofmration about the integrity constraints -> 
+This integrity check are very important to, leading a failure to this would lead to corrupt database .
+
+Corrupt databse->The putting of wrong datatype into the databases lead to foramtion of the corrupt databases .
+
+basically integrity constraitn are the definign of the variables in during the making of the key .
+
+domain -> int , varchar , etc , etc .
+entity -> this is the deifing of the null cosntraints .but in short the primary key of the eneity model or the relation model cannot be null in any case .
+
+refrential relation :
+insert constraint -> in the forgeing key table if there are no corrosponding attribute , then u cannot put any attribute in that . measn those entiries can be only added where the forgein key are the one that can be taken as  the input .
+
+delete constraint > the attribute cannot be removed from the parent if the attribute is in the child  .
