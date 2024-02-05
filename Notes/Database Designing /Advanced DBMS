@@ -1,39 +1,47 @@
-ER Modelling  : Advanced DBMS 
-Extended Feature of the Entity realtionship model :
-1.Speciallization 
-2.Generalizartion 
-3.Higher and lower level entity sets 
-4.Attribute inheritance 
-5.Aggregation
+Extended Entity model diagram 
+For bigger er models there are some important features that has to be use to make the er working and functioning : 
 
-Specialization : The process of designating the subgroups within an entity set is called as Specialization .The function or the set is called as the speicaliztion function or the specialiation set .
+Feature1 : Specialization 
+When for example a person is a user on the website , in addition it is a customer on the same website , hence addtion of the customer attribtue to this would lead to a lot of redundancy in this  , so the tthere is a spliting of the attribute that is done , and hence this is callled as the specialization.
 
-Example to the sepcialization  is/are  :
-A person that could ve a customer or could be a employee is  the process of specialization  .Here in the ER model of the above the attribtue of the specializated function set are very differenty adn not common wiht the other set .
+There are two entiy set formed one named the user and the other named as the customer . 
+The opposite of this is the generalization where the divide attributes are united to make a whole new group .
+
+In the specialization there is a ternary realtiosnhip that is experienced  although there could be some of more than  2 attribtue on the same .
+
+In the sepcialization there is always a Is -a realtion that is being followed  .
+
+In the specialization there is a : 
+1.Top - down apporach that is being followed  .
+abstract level  -> specialized level - > more specialized level -> end fully working level. 
+
+Officail defination of the specialization  :
+This is the breaking of the entity set basedd on the functioanliy , special and the features. 
+
+Whole motivation is to remove the redundant attribute from the er model based on the need  . To remove the redunant attribute , we can divide the whoel entity into the specialized fucntional entity . 
+
+Generalization  :
+This is the reverse of the specialization process , also the appraoch is called as bottom  - up approach for the making of the Generalized set . 
+The speicalization uses the top down and the geenraliation uses the bottoms-up apporach .
+Common properties unite to form the generalized set in the dbms er diagrams .
+
+Inheritancee  :
+This is very commmon , this is bascially the inhertiacneof the useful and the common attribute from the parent into teh child entity . 
+Both the specialisation and the generaliatiosatin uses the inheritance  .
+Example -> dog and cat are both animal.
+Participation Inheritance -> if the parent participate in a realtion then the child will also take part in the relation  this is called as the participation rule of the inheritance .
+
+Aggregation-> This is also one of the most important attribute  .
+
+what is a quaternary relationship ? 
+this is a relationship where more than three participating iun the single reaslitonship this is called as the quatinery relationshiop .
+
+In this a combination of the several entity are considered as the entiy and is connected to anathor entity sas a function .
+In this there is a follwinfg of the abstraction and using that in mind we connect the enetiy wiht those in the form of the realiton and this is called as the aggreation  .
+
+Officially :To show the realtionship in the realtipnship in the set it is called as the aggreation  .
+what is the motivation and the step needed to make the aggration  ?
+The first and the formost step is to use the concept of the abstsravtion and avoid the redundancy in the same .
 
 
-Generalization  : The commanlity by whihc the entity set that were maybe different but could be grouped under the same entity set is called as the Gneralization . The set is generalized one .
-
-The reverse of the specialization is the proces of Gneralization .In some context we can say that the subset of the Gneraliaztion  is the specialization  and the  super set of the speicalization is the process of generalization .
- 
-Type of Speicaliation :
-1.Disjoint ->For this if there are two entity set for that are speicalizaed for a sdingle entity , then  if the two are not having any realtion or if the two does not hold any Relationship with one other then the set thatg we get is called as the disjoint specialiation .
-
-2.Overllapping : Tne example to this is a bank empolyee who has taken loan from the same bank is a overlapping set specialization .
-
-The set that is get after the merging of two entity is called as the highehr level entity set and the one that are merger are  called  the lower level entity set .
-
-3.Partial generalization or specialisation : Some of the higher level entity set may not belong to some of the low level entiy set . 
-
-4. total generaliztion : The higher level goes into all the level of the lower level .
-
-
-Attribute Inheritance  : The attribue in  the generlatized set that are then passed onto the speicalized set is /are called as the attribute inheritance . The speicalised set have these set inhertied into there attriobute and they have these as one of the attribute .
-
-
-Aggregation : 
-Relatioship set participate in realtionship then aggreagtion is  used  in this .This proces is sort of relationship connecte to anathor realtionship . The is also the way in  whihc a very whoole new realtionship is made on the exisitng  relationship .
-
-Redundnat relationahip  : The realtiosnahip where the new relationship proposed does not make any chnages in the exisitng er model or it is found to ber worhtles then that is called as the redunant relatiosnhip .
-
-To avoidf the reduannt realtionship the process or the aggregation is very much used . 
+In the abstract scheme of the thing -> aggreatioin is basivcally the relationship with the realtionship + some attribute  .
