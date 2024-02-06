@@ -75,3 +75,38 @@ refrential relation :
 insert constraint -> in the forgeing key table if there are no corrosponding attribute , then u cannot put any attribute in that . measn those entiries can be only added where the forgein key are the one that can be taken as  the input .
 
 delete constraint > the attribute cannot be removed from the parent if the attribute is in the child  .
+
+Delete ON cascade command :
+This means or this just try to acchivee the deletation of the command from the child table and removal of  the corrosposndfign entry of the the same from teh  parent table as well  ,in this the child and the parent table are free from those entries  .
+The above helps in the reducastion of the inconsisty of the database .
+ 
+Synatx :
+Refrance from tb_name and th4e particular function (delete cascade in this case)
+
+Is it possisble to have a null forgein key  ?
+Yes the value of the forgein can be null in a model or maybe in the relational model.
+
+Example to this is : remove entry / table/query from the table and on deletion make teh foreign key as null in the both foreign  key and the in the corrosponding table .
+
+The delete on the cascade command is visible on when the value of teh entyr is removed from the parent and the corrosponding key value in child has to made as null to make the databasse consistent. 
+
+Key constraints  :
+These are used in the time of the makign of the tbale in the SQL .
+example to these are int , varchar etc and etc .
+Some of the important key constraints  :
+1.Not null -> this is the default fixed value that may be 0  but it cannot be unadssignend and maybe un left in the table . This has to be defined by any of teh chance  .
+
+Example of the defination :
+create table customer(int age , varchar name not null ) ;
+In the above the name cannot eb null by any chance .
+
+If the name is none in any table entyr the output will be -> error no curd operation  possible . 
+
+2.Unique constraint->These are the value that are use to make the tbale and the value as unique , in a particular table there can be many and many unique attribute possible but in the case of the priamry key these are only one in the each table and the overall senses is very very restricted .
+
+3.Default constraint ->These are use to set teh cplumn of the particular entry to some constant so that when ever the new custoemr is there we can just find out if the defualt cosntraint has to eb adjusted or not.
+The possible value of the defualt constraitn are 0 and 1 .
+
+4.Check constriant -> These are use to check and value the range of the user inpuht on some of the entry in the table .
+
+Primary key constraint -> the whole main point of this is used ot show that each tuple output can be identified uniquely and the the this cannot be null ever . Thisis always unique in the context . 
