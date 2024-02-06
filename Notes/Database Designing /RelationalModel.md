@@ -100,3 +100,16 @@ These are used in the time of the making of the table in SQL.
 - **Not Null**: This is the default fixed value that may be 0, but it cannot be unassigned and maybe left in the table. This has to be defined by any of the chances.
 
 Example of the definition:
+If the name is none in any table entry, the output will be an error; no CRUD operation is possible.
+
+### Key Constraints
+
+1. **Unique Constraint**: These are the values that are used to make the table and the value as unique. In a particular table, there can be many unique attributes possible, but in the case of the primary key, these are only one in each table, and the overall sense is very restricted.
+
+2. **Default Constraint**: These are used to set the column of the particular entry to some constant so that whenever the new customer is there, we can just find out if the default constraint has to be adjusted or not. The possible values of the default constraint are 0 and 1.
+
+3. **Check Constraint**: These are used to check and value the range of the user input on some of the entry in the table.
+
+### Primary Key Constraint
+
+The whole main point of this is used to show that each tuple output can be identified uniquely and this cannot be null ever. This is always unique in the context.
