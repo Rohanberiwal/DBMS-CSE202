@@ -1,0 +1,39 @@
+Embedded Sql
+These allows us to use the ODBC  and the JDBC connect to connect  with a progrmaming langaugae . 
+A large data connot be stroed using thbe SQL so there has to be a use of a good programmign langauge Like the java , pyhton etc .
+The main part in the embedded SQL is / are the cusor where the cyursor makes the psosible uopdates  
+
+
+Synatx - > 
+EXEC SQL <ERMBEDDED SQL STATETMENT START >
+END EXEC 
+
+EXEC SQL is use used o connect to the serveer usign teh username and the password .
+
+Like- >
+Exec SQL connect to server using USERNAME usig password 
+
+basic Embedded SQL code for a QUERY - >
+
+exec sql connect to database_seerver user username using passcode ;
+Exec sql begin declare section  ;
+
+int credit_amount ;
+
+exec sql end declare section 
+cursor -> popinnter user to do the selection and the updatetion in the declare sectioon  .
+
+
+Exec  SQL  
+declare c cursor for 
+select id _name fronm student wherr total_credit>credit_amount ; 
+exec SQL open c ; 
+exec sql fetch c into si  ; sn  ;
+Excec sql close  ;
+
+
+end exec 
+UPDATE AND THE INSEERT AND THE DELETE commands :
+Exec sql <valid update  , insert or delete >
+
+
